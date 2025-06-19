@@ -6,12 +6,11 @@ namespace Gameplay.Components
 {
     public class PlayerMovementComponent : NetworkBehaviour
     {
+        private const string ACTION_MAP = "Player";
         private const string MOVE_ACTION_NAME = "Move"; 
         
         [SerializeField] private float speed = 5f;
 
-        [SerializeField]
-        private PlayerInput _playerInput;
         [SerializeField]
         private InputActionAsset _inputActionMap;
 
@@ -19,13 +18,9 @@ namespace Gameplay.Components
 
         private void Awake()
         {
-            if (!IsLocalPlayer)
-            {
-                _playerInput.enabled = false;
-                return;
-            }
-            
-            _moveAction = _playerInput.actions.FindAction(MOVE_ACTION_NAME);
+            _moveAction = _inputActionMap
+                .FindActionMap(ACTION_MAP).
+                FindAction(MOVE_ACTION_NAME);
         }
 
         private void Update()
