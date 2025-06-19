@@ -230,8 +230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
   speed: 5
-  playerInput: {fileID: 3209691430501384378}
-  _inputActionMap: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  _playerInput: {fileID: 3209691430501384378}
 --- !u!136 &7184866113310261396
 CapsuleCollider:
   m_ObjectHideFlags: 0
