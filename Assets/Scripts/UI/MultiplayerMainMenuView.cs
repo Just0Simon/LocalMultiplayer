@@ -1,9 +1,14 @@
+using System;
 using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MultiplayerMainMenu : MonoBehaviour
+public class MultiplayerMainMenuView : MonoBehaviour
 {
+    public event Action OnHost;
+    public event Action OnClient;
+    public event Action OnShutdown;
+    
     [SerializeField]
     private Button _hostButton;
     
@@ -12,7 +17,7 @@ public class MultiplayerMainMenu : MonoBehaviour
 
     [SerializeField]
     private Button _shutdownButton;
-
+    
     private void Awake()
     {
         _hostButton.onClick.AddListener(OnHostButtonPressed);
@@ -22,17 +27,17 @@ public class MultiplayerMainMenu : MonoBehaviour
 
     private void OnHostButtonPressed()
     {
-        NetworkManager.Singleton.StartHost();
+        OnHost?.Invoke();
     }
 
     private void OnJoinButtonPressed()
     {
-        NetworkManager.Singleton.StartClient();
+        OnClient?.Invoke();
     }
 
     private void OnShutdownButtonPressed()
     {
-        NetworkManager.Singleton.Shutdown();
+        OnShutdown?.Invoke();
     }
 
     private void OnDestroy()
