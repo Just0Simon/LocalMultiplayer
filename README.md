@@ -55,21 +55,6 @@ The project demonstrates proficiency in Unity, C#, and Netcode for GameObjects, 
    - Control players with WASD keys.
    - Avoid enemy projectiles and navigate around obstacles.
 
-## Project Structure
-- **Assets/Scripts**:
-  - `PlayerController.cs`: Handles player movement and health.
-  - `EnemyController.cs`: Manages enemy AI, targeting, and shooting.
-  - `Projectile.cs`: Controls projectile movement and damage.
-  - `EnemySpawner.cs`: Spawns enemies on the host at regular intervals.
-  - `NetworkSetup.cs`: Manages network initialization and UI buttons.
-- **Assets/Prefabs**:
-  - `Player.prefab`: Networked player object (capsule or cube).
-  - `Enemy.prefab`: Networked enemy object (red cube).
-  - `Projectile.prefab`: Networked projectile object.
-- **Assets/Scenes**:
-  - `MainMenu`: The primary scene with a user interface providing buttons for hosting, joining as a client, and shutting down.
-  - `Gameplay`: The gameplay scene with obstacles, enemy spawners, and a baked NavMesh surface.
-
 ## Implemented Mechanics
 - **Networking**:
   - Host-Client model using Netcode for GameObjects.
