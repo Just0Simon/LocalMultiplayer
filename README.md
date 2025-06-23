@@ -79,7 +79,9 @@ The project demonstrates proficiency in Unity, C#, and Netcode for GameObjects, 
   - Enemy spawners.
 
 ## Gameplay Video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/087zlQdqj7o" frameborder="0" allowfullscreen></iframe>
+<a href="https://youtu.be/087zlQdqj7o">
+<image scr="Preview.png" wight=100% alt="Local Multiplayer Demo Preview">
+</a>
 
 ## Notes
 - The project uses basic geometric shapes (capsules, cubes, cylinders), focusing on functionality over visuals.
