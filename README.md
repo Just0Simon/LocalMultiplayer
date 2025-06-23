@@ -80,7 +80,7 @@ The project demonstrates proficiency in Unity, C#, and Netcode for GameObjects, 
 
 ## Gameplay Video
 <a href="https://youtu.be/087zlQdqj7o">
-<image scr="Preview.png" wight=100% alt="Local Multiplayer Demo Preview">
+<image scr="https://github.com/Just0Simon/LocalMultiplayer/blob/main/Preview.jpg" wight=100% alt="Local Multiplayer Demo Preview">
 </a>
 
 ## Notes
