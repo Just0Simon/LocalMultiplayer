@@ -79,9 +79,7 @@ The project demonstrates proficiency in Unity, C#, and Netcode for GameObjects, 
   - Enemy spawners.
 
 ## Gameplay Video
-<video controls width=100%>
-  <source src="\Recordings\TwoPlayers.mp4" type="video/mp4">
-</video>
+<iframe width="560" height="315" src="https://youtu.be/087zlQdqj7o" frameborder="0" allowfullscreen></iframe>
 
 ## Notes
 - The project uses basic geometric shapes (capsules, cubes, cylinders), focusing on functionality over visuals.
